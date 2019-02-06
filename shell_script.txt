@@ -1,0 +1,9 @@
+Command arguments:
+$0: shell name
+$n: nth argument
+$# : total number of argument
+$* : total argument in a single double quote
+$@: all arguments are double quoted seperately
+$?: The exit status of last command executed
+$$: process id of current process
+$!: The process id of last command executed
