@@ -1,0 +1,4 @@
+-c Create an archive
+-x Extract files from archive
+-t Display files in archive
+-f arch Speficify the archive arch

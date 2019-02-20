@@ -1,0 +1,21 @@
+how to log into sql server:
+	mysql -u root -p
+	enter password: 
+	
+	show databases;
+	use mydb;
+	show tables;
+	create table table_name (id int, name char(20),marks int);
+	inserting multiple entry:
+		insert into students values(2,"pranav",15),(3,"piyush",16);
+	select * from table_name
+	update students set marks=20 where name="pranav";
+	alter table students rename to student;
+	alter table tablename modify name char(30)
+	alter table table_name add (id varchar(20));
+	alter table student modify marks varchar(30);
+	alter table student modify marks int;
+	alter table student add grade char(2) not null default 'D';
+	insert into student (id,name,marks) values(5, "Akshay",20);
+	describe student; or desc student
+	insert into new_student(id,name) select id,name from student;
