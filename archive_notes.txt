@@ -2,3 +2,8 @@
 -x Extract files from archive
 -t Display files in archive
 -f arch Speficify the archive arch
+-v verbose
+example :
+	tar -cvf file.tar file1 file2 file3
+
+
