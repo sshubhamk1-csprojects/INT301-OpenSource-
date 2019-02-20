@@ -19,3 +19,11 @@ how to log into sql server:
 	insert into student (id,name,marks) values(5, "Akshay",20);
 	describe student; or desc student
 	insert into new_student(id,name) select id,name from student;
+
+	create table new_table (ID int PRIMARY KEY NOT NULL,name VARCHAR(20) NOT NULL,AGE int, marks int);
+	alter table new_student add last_name varchar(20);
+	alter table students add age int;
+	alter table  table_name rename to new_table_name;
+	select DISTINCT name from students;
+	select * from students where age between 18 and 36;
+	select * from students where age> 18 and age < 36;
