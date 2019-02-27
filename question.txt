@@ -1,0 +1,13 @@
+create a table employee with fields emp_id, emp_name, emp_salary, emp_email, and emp_bonus.
+Make emp_id as primary key. Insert 10 values. You should autoincrement primary key.
+
+2) Find out the avg of salary of all employees. You need to increment the salary by 5000 where bonus is between 200 to 500.
+
+3) Insert a new column awards in the table.
+
+4) Change the data type of emp_email to varchar.
+
+5) delete the employees whose salary is less than 5000.
+
+
+32 - 313
