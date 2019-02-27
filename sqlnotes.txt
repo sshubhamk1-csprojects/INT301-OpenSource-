@@ -34,3 +34,13 @@ create table employee ( emp_id int primary key auto_increment, emp_name varchar(
 
 insert into employee (emp_name, emp_salary, emp_email, emp_bonus) values("Shubham", 200000, "sshubhamk1@hotmail.com", 23523),("Pranav", 235333, "pranav@health.com", 235323);
 
+
+select avg(emp_salary) from emp_salary;
+
+update employee set emp_salary =emp_salary +  5000 where (emp_bonus < 500 && emp_bonus > 200);
+alter table employee add  column award varchar(20);
+
+alter table employee modify emp_email varchar(40);
+
+delete from employee where emp_salary < 5000;
+
