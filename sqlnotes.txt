@@ -7,7 +7,7 @@ how to log into sql server:
 	show tables;
 	create table table_name (id int, name char(20),marks int);
 	inserting multiple entry:
-		insert into students values(2,"pranav",15),(3,"piyush",16);
+	insert into students values(2,"pranav",15),(3,"piyush",16);
 	select * from table_name
 	update students set marks=20 where name="pranav";
 	alter table students rename to student;
@@ -27,3 +27,10 @@ how to log into sql server:
 	select DISTINCT name from students;
 	select * from students where age between 18 and 36;
 	select * from students where age> 18 and age < 36;
+	select count(marks) from students group by name having count(name)>0 ;
+
+create table employee ( emp_id int primary key auto_increment, emp_name varchar(30), emp_salary int, emp_email varchar(30), emp_bonus int);
+
+
+insert into employee (emp_name, emp_salary, emp_email, emp_bonus) values("Shubham", 200000, "sshubhamk1@hotmail.com", 23523),("Pranav", 235333, "pranav@health.com", 235323);
+
