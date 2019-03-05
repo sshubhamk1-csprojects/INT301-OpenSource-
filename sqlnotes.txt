@@ -44,3 +44,38 @@ alter table employee modify emp_email varchar(40);
 
 delete from employee where emp_salary < 5000;
 
+alter table emp add emp_id int auto_incrment;
+
+create table sales (id int, saler_name varchar(20), primary key(id), foreign key (id) references employee(emp_id));
+
+update employee set emp_bonus = case when emp_bonus <= 300 then 300  when emp_bonus < 2500 then 2500 else emp_bonus + 100 end;
+
+select * from employee join sales;
+
+select * from employee inner join sales where employee.emp_id = sales.id;
+
+select * from employee left join sales on employee.emp_id = sales.id;
+
+select * from employee inner join news ;
+
+select * from employee cross join news;
+create view v1 as (select * from employee cross join news);
+select * from v1 where emp_id = 34;
+
+can't insert value if something went wrong while inserting into original table and output some error
+
+
+create view v2 as select emp_name,id from v1;(view from view)
+
+alter command won't work with views
+
+create index i1 on employee(emp_email);
+
+create table shirts (name varchar(20), size ENUM('x-small', 'small','medium','large','x-large'));
+
+
+create user sshub;
+
+
+sudo mysql -u sshub
+
