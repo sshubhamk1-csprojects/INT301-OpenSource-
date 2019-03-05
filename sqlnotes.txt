@@ -79,3 +79,16 @@ create user sshub;
 
 sudo mysql -u sshub
 
+
+create user username identified by password
+grant crate database to username
+grant create table to username
+login to username and  can try
+
+grant select on employee to sshub;
+
+revoke select from employee to sshub;
+show grants for sshub;
+select user from mysql.user;
+drop user sshub;
+ 
