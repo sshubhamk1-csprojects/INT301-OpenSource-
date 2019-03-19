@@ -1,0 +1,17 @@
+sudo apt-get install apache2
+sudo service apache2 start
+make files at /var/www/html
+cd /etc/apache2/
+cd sites-enabled
+open 000-default.conf
+chance path at  DocumentRoot row (/var/www/html)
+sudo gedit /etc/apache2/apache2.conf
+and then in directory /www/var/ tag modify some lines shown below
+options index followSymlinks
+AllowOverride all
+Require all granted
+save the file
+create the password file
+sudo htpasswd -c /etc/apache2/.htpasswd shubh
+enter password 
+re-enter password
