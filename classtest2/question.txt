@@ -1,0 +1,15 @@
+Q1) create a table student with column name, registration no ,date of birth, section, CGPa,grade
+	Registation number should be primary key and should be auto increment and section and najme should be not null.
+	insert 5 rows in one SQL query
+	Find out the name of the student with highest CGPA
+	increase  CGPA using case statemnt change the grade of student "O" whose CGPA is greater than 9, change the grade to "A" whose CGPA is greater than 7 and set default grade to "B" for rest all others.
+	change the section column data type from varchar to char
+
+create a webpage "REGISTRATION FROM for Admission". Host this page at apache server and maintain an authentication with username "UI" and password "P123" 
+
+name varchar(20) not null
+section varchar(20) not null
+regno int primary key auto_incremnt
+cgpa float,
+grade char[2]
+
